@@ -1,0 +1,28 @@
+{
+  "name": "rustup",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview",
+    "start": "tsx server/index.ts",
+    "test": "tsx tests/logic.test.ts && tsx tests/api.test.ts && tsx tests/sound.test.ts",
+    "e2e": "node tests/e2e.mjs"
+  },
+  "dependencies": {
+    "lucide-react": "^0.453.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.0",
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "@vitejs/plugin-react": "^4.3.1",
+    "tsx": "^4.19.0",
+    "typescript": "^5.5.4",
+    "vite": "^5.4.0"
+  }
+}
